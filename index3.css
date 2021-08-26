@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    overflow-x: hidden;
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    left: -50px;
+    
+}
+.sky{
+    background-image: url(./images/sky.jpg);
+    width: 110%;
+    height: 600px;
+}
+.flag{
+    background-image: url(./images/Tiranga_\(Indian_Flag\).svg);
+    width: 100px;
+    height: 100px;
+    
+    background-size: 100px 100px;
+    position: absolute;
+    bottom: 216px;
+    left: 602px;
+    z-index: 1;
+}
+.sun{
+    background-image: url(https://www.onlygfx.com/wp-content/uploads/2018/09/4-clipart-sun-4.png);
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    position: absolute;
+    top: 70px;
+    right: 200px;
+    animation-name: sun;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes sun {
+    100%{
+        transform: translateX(-1300px);
+    }
+}
+.city{
+    background-image: url(./images/city.png);
+    width: 500%;
+    height: 250px;
+    position: absolute;
+    bottom: 250px;
+    animation-name: city;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    
+}
+@keyframes city {
+    100%{
+        transform: translateX(-4000px);
+    }
+}
+.road{
+    background-image: url(./images/road.jpg);
+    width: 500%;
+    height: 250px;
+    position: absolute;
+    bottom: 0px;
+    animation-name: road;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+@keyframes road {
+    100%{
+        transform: translateX(-4000px);
+    }
+}
+
+.car{
+    background-image: url(./images/car.png);
+    width: 550px;
+    height: 225px;
+    background-size: 550px 225px;
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+}
+/* .flag{
+    background-image: url(https://thumbs.dreamstime.com/b/flag-india-indian-national-background-43514001.jpg);
+    width: 160px;
+    height: 77px;
+    background-size: 160px 77px;
+    position: absolute;
+    bottom: 164px;
+    left: 392px;
+} */
+.wheel1{
+    background-image: url(./images/wheel.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    position: absolute;
+    bottom: 105px;
+    left: 247px;
+    animation-name: wheel1;
+    animation-iteration-count: infinite;
+    animation-duration: 100ms;
+}
+@keyframes wheel1 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.wheel2{
+    background-image: url(./images/wheel.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    position: absolute;
+    bottom: 105px;
+    left: 584px;
+    animation-name: wheel2;
+    animation-iteration-count: infinite;
+    animation-duration: 100ms;
+}
+@keyframes wheel2 {
+    100%{
+        transform: rotate(360deg);
+    }
+}

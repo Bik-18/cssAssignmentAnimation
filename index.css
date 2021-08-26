@@ -1,0 +1,130 @@
+
+.set-loc{
+    display: flex;
+    justify-content: center;
+}
+.box-container{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: 100px;
+    padding: 50px;
+    
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation: box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    /* animation-delay: 2s; */
+    display: inline-block;
+
+}
+@keyframes box {
+    0%{
+        transform: skewx(20deg);
+    }
+    100%{
+        transform: skewx(-20deg);
+    }
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    animation: box2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-delay: 5s; */display: inline-block;
+
+
+}
+@keyframes box2 {
+    0%{
+        transform: skewy(20deg);
+    }
+    100%{
+        transform: skewy(-20deg);
+    }
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation: box3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-delay: 2s; */display: inline-block;
+
+
+}
+@keyframes box3 {
+    100%{
+        transform: rotate(1turn);
+    }
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    animation: box4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-delay: 2s; */display: inline-block;
+
+
+}
+@keyframes box4 {
+    100%{
+        transform:scalex(1.5) ;
+    }
+}
+.box5{
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    animation: box5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-delay: 2s; */display: inline-block;
+
+
+}
+@keyframes box5 {
+    100%{
+        transform:scaley(1.5) ;
+    }
+}
+.box6{
+    width: 100px;
+    height: 100px;
+    background-color: darkblue;
+    animation: box6;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation-delay: 2s; */display: inline-block;
+
+
+}
+@keyframes box6 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(50deg) ;
+    }
+}
+
+.button{
+    text-align: center;
+    font-size: 50px;
+}
